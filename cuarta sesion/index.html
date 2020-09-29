@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tercera sesion</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+
+        <a-assets>
+
+            <video id="dance" src="assets\dance.mp4" autoplay loop="true"></video>
+            <video id="dog" src="assets\dog.mp4" autoplay loop="true"></video>
+            <video id="shoot" src="assets\shoot.mp4" autoplay loop="true"></video>
+            <video id="eliangif" src="assets\eliangif.mp4" autoplay loop="true"></video>
+            <video id="sky" src="assets\sky.mp4" autoplay loop="true"></video>
+            <audio id="juegos" src="assets\juegos.mp3"></audio>
+        </a-assets>
+    
+    <a-entity environment="preset: default" fog=""></a-entity>
+    <a-sound src="#juegos" autoplay="true" loop="true" position="0 0 -4"></a-sound>
+    <a-sphere src="#dog" position="0 5 3" radius="1" color="" shadow></a-sphere>
+    <a-sphere src="#dance" position="15 5 15" radius="2" color="" shadow></a-sphere>
+    <a-video src="#shoot" width="10" height="10" color="" position="30 6 30"shadow></a-video>
+    <a-box src="#eliangif" position="0.799 1.072 -3.581" scale="1 2.462 1" rotation="0 45 0" color=""></a-box>
+    <a-videosphere src="#sky"></a-videosphere>
+
+</a-scene>
+</body>
+
+</html>
